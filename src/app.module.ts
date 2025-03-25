@@ -17,6 +17,6 @@ import * as cors from 'cors';
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(cors({origin: 'http://localhost:8080'})).forRoutes('*');
+    consumer.apply(cors({origin: 'http://localhost:8081'})).forRoutes('*');
   }
 }
